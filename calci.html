@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCI</title>
+    <style>
+        input{
+            height: 120px;
+            width:146px;
+            background-color: whitesmoke;
+            font-size: 80px;
+
+           
+        }
+        #result{
+            height: 120px;
+            width: 441px;
+            background-color:white;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <table>
+            <tr>
+                <td colspan="3"> <input type='text' id='result' class='screen' ></td>
+                <td><input type='button' value='C' onclick="clearScreen()" class="clear" style="background-color: green;"></td>
+            </tr>
+        </table>
+        <div class="keys">
+            <input type="button" value="7" onClick="display('7')" ></input>
+            <input type="button" value="8"  onClick="display('8')"></input>
+            <input type="button" value="9"  onClick="display('9')" ></input>
+            <input type="button" value="/"   onClick="display('/')"  style="background-color:lightblue;"></input><br>
+            <input type="button" value="4"  onClick="display('4')"></input>
+            <input type="button" value="5" onClick="display('5')"></input>
+            <input type="button" value="6"  onClick="display('6')"></input>
+
+            <input type="button" value="*"  onClick="display('*')"   style="background-color:lightblue ;"></input><br>
+            <input type="button" value="1" onClick="display('1')"></input>
+            <input type="button" value="2"  onClick="display('2')"></input>
+            <input type="button" value="3"  onClick="display('3')"></input>
+            <input type="button" value="-"  onClick="display('-')"   style="background-color:lightblue ;"></input><br>
+            <input type="button" value="0"  onClick="display('0')"></input>
+            <input type="button" value="."  onClick="display('.')"   style="background-color:lightblue ;"></input>
+            <input type="button" value="="  onClick="solve()"   style="background-color:red;"></input>
+            <input type="button" value="+" onClick="display('+')"   style="background-color:lightskyblue ;"></input>
+        </div>
+    </div>
+    <script src="calci.js"></script>
+    
+</body>
+</html>
